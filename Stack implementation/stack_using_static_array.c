@@ -33,26 +33,25 @@ void main()
 
     switch(choice)
     {
-      case 1:
-          printf("Enter element to push: ");
-          scanf("%d", &item);
-          push(item);
-          break;
-      case 2:
-          item = pop();
-          if(item != -999)
-              printf("%d popped.\n\n", item);
-          break;
-      case 3:
-          peek();
-          break;
-      case 4:
-          traverse();
-          break;
-      case 5:
-          exit(0);
-      default:
-          printf("Invalid input");
+      case 1: printf("Enter element to push: ");
+              scanf("%d", &item);
+              push(item);
+              break;
+
+      case 2: item = pop();
+              if(item != -999)
+                  printf("%d popped.\n\n", item);
+              break;
+
+      case 3: peek();
+              break;
+
+      case 4: traverse();
+              break;
+
+      case 5: exit(0);
+      
+      default:  printf("Invalid input");
     }
   }
 }
